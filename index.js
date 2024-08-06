@@ -208,51 +208,77 @@ SkillCardFuntion(tools, 'tools');
 
 const toggleButtons = document.querySelectorAll('.toggleViewButton');
 
-    toggleButtons.forEach(button => {
-        button.addEventListener('change', function () {
-            const singleProject = button.closest('.single-project');
-            const laptopView = singleProject.querySelector('.laptopView');
-            const mobileView = singleProject.querySelector('.mobileView');
+toggleButtons.forEach(button => {
+    button.addEventListener('change', function () {
+        const singleProject = button.closest('.single-project');
+        const laptopView = singleProject.querySelector('.laptopView');
+        const mobileView = singleProject.querySelector('.mobileView');
 
-            if (button.checked) {
-                // Switch to mobile view
-                laptopView.classList.add('animate__fadeOut');
-                laptopView.addEventListener('animationend', function () {
-                    laptopView.style.display = 'none';
-                    laptopView.classList.remove('animate__fadeOut');
-                    mobileView.style.display = 'block';
-                    mobileView.classList.add('animate__fadeIn');
-                    mobileView.addEventListener('animationend', function () {
-                        mobileView.classList.remove('animate__fadeIn');
-                    }, { once: true });
-                }, { once: true });
-            } else {
-                // Switch to laptop view
-                mobileView.classList.add('animate__fadeOut');
+        if (button.checked) {
+            // Switch to mobile view
+            laptopView.classList.add('animate__fadeOut');
+            laptopView.addEventListener('animationend', function () {
+                laptopView.style.display = 'none';
+                laptopView.classList.remove('animate__fadeOut');
+                mobileView.style.display = 'block';
+                mobileView.classList.add('animate__fadeIn');
                 mobileView.addEventListener('animationend', function () {
-                    mobileView.style.display = 'none';
-                    mobileView.classList.remove('animate__fadeOut');
-                    laptopView.style.display = 'block';
-                    laptopView.classList.add('animate__fadeIn');
-                    laptopView.addEventListener('animationend', function () {
-                        laptopView.classList.remove('animate__fadeIn');
-                    }, { once: true });
+                    mobileView.classList.remove('animate__fadeIn');
                 }, { once: true });
-            }
-        });
+            }, { once: true });
+        } else {
+            // Switch to laptop view
+            mobileView.classList.add('animate__fadeOut');
+            mobileView.addEventListener('animationend', function () {
+                mobileView.style.display = 'none';
+                mobileView.classList.remove('animate__fadeOut');
+                laptopView.style.display = 'block';
+                laptopView.classList.add('animate__fadeIn');
+                laptopView.addEventListener('animationend', function () {
+                    laptopView.classList.remove('animate__fadeIn');
+                }, { once: true });
+            }, { once: true });
+        }
     });
+});
 
 
-    document.getElementById('resume-button').addEventListener('click', function(event) {
-        event.preventDefault();
- 
-        window.open(this.href, '_blank');
+document.getElementById('resume-button').addEventListener('click', function (event) {
+    event.preventDefault();
 
-        const downloadLink = document.createElement('a');
-        downloadLink.href = './resume/AshutoshSahu-Resume.pdf'; 
-        downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-    });
-    
+    window.open(this.href, '_blank');
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+});
+
+
+document.getElementById('resume-button2').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    window.open(this.href, '_blank');
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+});
+
+document.getElementById('resume-button3').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    window.open(this.href, '_blank');
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+});
