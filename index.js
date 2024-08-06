@@ -243,3 +243,16 @@ const toggleButtons = document.querySelectorAll('.toggleViewButton');
     });
 
 
+    document.getElementById('resume-button').addEventListener('click', function(event) {
+        event.preventDefault();
+ 
+        window.open(this.href, '_blank');
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = './resume/AshutoshSahu-Resume.pdf'; 
+        downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    });
+    
