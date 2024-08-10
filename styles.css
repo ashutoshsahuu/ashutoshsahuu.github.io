@@ -682,6 +682,106 @@ input:checked+div span.line-2 {
     padding: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+
+    #about {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-detail {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-desc-upper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-desc-middle {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-desc-lower {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-desc-upper-text {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .about-desc-upper-image {
+        width: 100%;
+    }
+
+    .about-desc-middle {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-desc-middle-card1 {
+        width: 100%;
+    }
+
+    .about-desc-middle-card1 h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-desc-middle-card2 h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-desc-middle-card2 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .about-desc-middle-text {
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .about-desc-lower {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-desc-lower-contact {
+        width: 100%;
+    }
+
+    .about-desc-lower-hobbie {
+        width: 100%;
+        height: 280px;
+    }
+
+    .about-desc-lower-hobbie-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .about-desc-lower-hobbie-list span {
+        font-size: 1rem;
+    }
+
+    .about-desc-lower-resume {
+        width: 100%;
+        height: 280px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     #about {
         width: 100%;
@@ -737,7 +837,7 @@ input:checked+div span.line-2 {
     .about-desc-middle-card2 h3 {
         font-size: 1.2rem;
     }
-    
+
     .about-desc-middle-card2 {
         font-size: 1.2rem;
         width: 46.2%;
@@ -884,6 +984,26 @@ input:checked+div span.line-2 {
     font-size: 1.1 rem;
     font-weight: 700;
     /* color: #0D0D0D; */
+}
+
+@media screen and (max-width: 1024px) {
+    #skills {
+        width: 100%;
+    }
+
+    .skills-card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skillCard img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skillCard p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
