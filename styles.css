@@ -274,7 +274,6 @@ input:checked+div span.line-2 {
 }
 
 
-
 .home-icons {
     display: flex;
     align-items: center;
@@ -954,14 +953,28 @@ input:checked+div span.line-2 {
     width: fit-content;
     padding: 6px 10px;
     border-radius: 5px;
-    /* background: linear-gradient(90deg, #282828, #505050); */
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
     transition: all 0.3s ease;
     cursor: pointer;
-    /* background-color: #73cae7; */
     background-color: #0D0D0D;
     color: #f0f0f0;
+    animation: Up 1s ease forwards;
+    animation: Up 5s ease forwards;
+    animation-timeline: view();
+    animation-range-start: 0vh;
+    animation-range-end: 35vh;
+}
 
+@keyframes Up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .skillCard:hover {
@@ -985,6 +998,10 @@ input:checked+div span.line-2 {
     font-weight: 700;
     /* color: #0D0D0D; */
 }
+
+
+
+
 
 @media screen and (max-width: 1024px) {
     #skills {

@@ -247,9 +247,8 @@ document.getElementById('resume-button').addEventListener('click', function (eve
     event.preventDefault();
 
     window.open(this.href, '_blank');
-
     const downloadLink = document.createElement('a');
-    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.href = './resume/AshutoshSahuResume.pdf';
     downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
@@ -263,7 +262,7 @@ document.getElementById('resume-button2').addEventListener('click', function (ev
     window.open(this.href, '_blank');
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.href = './resume/AshutoshSahuResume.pdf';
     downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
@@ -276,7 +275,7 @@ document.getElementById('resume-button3').addEventListener('click', function (ev
     window.open(this.href, '_blank');
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = './resume/AshutoshSahu-Resume.pdf';
+    downloadLink.href = './resume/AshutoshSahuResume.pdf';
     downloadLink.download = 'Ashutosh_Sahu_Resume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
