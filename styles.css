@@ -341,6 +341,41 @@ input:checked+div span.line-2 {
     margin-left: 250px;
 }
 
+@media screen and (max-width: 1024px) {
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        transition: margin-left 0.3s ease;
+    }
+
+    .sidebar.open~.main-content {
+        margin-left: 200px;
+    }
+
+    #home {
+        width: 100%;
+        height: 700px;
+    }
+   
+    
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -688,96 +723,36 @@ input:checked+div span.line-2 {
     }
 
     .about-image {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .about-detail {
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .about-desc-upper {
-        flex-direction: column;
         gap: 20px;
     }
 
-    .about-desc-middle {
-        flex-direction: column;
-        gap: 20px;
-    }
 
-    .about-desc-lower {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about-desc-upper-text {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .about-desc-upper-image {
-        width: 100%;
-    }
-
-    .about-desc-middle {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .about-desc-middle-card1 {
-        width: 100%;
+    .about-desc-upper p{
+        font-size: 1rem;
     }
 
     .about-desc-middle-card1 h3 {
-        font-size: 1.2rem;
+        font-size: 1.2rem ;
     }
 
     .about-desc-middle-card2 h3 {
         font-size: 1.2rem;
     }
 
-    .about-desc-middle-card2 {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .about-desc-middle-text {
-        width: 100%;
-        height: fit-content;
-        padding: 20px;
-    }
-
-    .about-desc-lower {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .about-desc-lower-contact {
-        width: 100%;
-    }
-
-    .about-desc-lower-hobbie {
-        width: 100%;
-        height: 280px;
-    }
-
-    .about-desc-lower-hobbie-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
+    .about-desc-middle-text p{
+        font-size: 1rem;
     }
 
     .about-desc-lower-hobbie-list span {
         font-size: 1rem;
     }
 
-    .about-desc-lower-resume {
-        width: 100%;
-        height: 280px;
-    }
 
 }
 
@@ -947,7 +922,6 @@ input:checked+div span.line-2 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    ;
     gap: 10px;
     height: fit-content;
     width: fit-content;
